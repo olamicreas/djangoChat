@@ -1,0 +1,21 @@
+{% extends 'user/base.html' %} 
+{% block content %} 
+<br>
+<div class="container border rounded">
+    <form method="POST">
+        {% csrf_token %} 
+        <fieldset class='form-group'>
+            <legend class="border-bottom mb-4">Join Today</legend>
+
+            {{form.as_p}}
+        </fieldset>
+        <div class='form-group'>
+            <button type="submit" class="btn btn-primary">Sign in</button> 
+        </div>
+        </form>
+</div>
+
+
+
+
+{% endblock %}

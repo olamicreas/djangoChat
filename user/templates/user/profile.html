@@ -1,0 +1,8 @@
+{% extends 'base.html' %} 
+{% block content %} 
+<div class="conatiner">
+    <img class="rounded-circle" src="{{user.profile.image.url}}" style="width: 20%;">
+    <p>{{user.username}}</p>
+    <p>{{user.email}}</p>
+</div>
+{% endblock %}
